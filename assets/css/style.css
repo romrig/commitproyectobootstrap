@@ -1,0 +1,117 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+.container-fluid {
+    margin: 0 !important;
+}
+main {
+    width: 100%;
+    display: inline;
+}
+/*BARRA DE NAVEGACION CON BOOTSTRAP*/
+.navbar {
+    background-image: url(../imagenes/backgroundfullblack.jpg) !important;
+    background-size: contain;
+    border-bottom: solid 4px rgb(22, 22, 22);
+    
+}
+
+nav span {
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(27, 27, 27);
+    background-color: rgba(248, 248, 248, 0.555) !important;
+}
+/*ANIMACION DE BORDEADO CON GRADIENTES EN BARRA DE NAVE*/
+.bordeado {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 3px;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+.bordeado::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 200%;
+    height: 100%;
+    background: 
+    linear-gradient(115deg , rgb(110, 0, 22), rgb(255, 255, 255), crimson , rgb(255, 255, 255) , crimson);
+    background-size: 50% 100%;
+    border-radius: inherit;
+}
+.bordeado:hover::before {
+    animation: animate_border .75s linear infinite;
+}
+.bordeado span {
+    display: block;
+    background-color: #fff;
+    padding: 13px 20px;
+    border-radius: 3px;
+    position: relative;
+    z-index: 2;
+}
+@keyframes animate_border {
+    to {
+        transform: translate(-50%);
+    }
+}
+.navbar-toggler {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url(../imagenes/Untitled\ design.png);
+    background-size: contain;
+}
+.card {
+    background-image: url(../imagenes/polygonalbackground.png);
+    background-size: contain;
+    margin-left: 50px !important;
+
+}
+.card h5 , p {
+    color: white;
+    font-weight: 700;
+}
+.card h5 {
+    padding: 10px;
+    border-bottom: 2px solid crimson;
+}
+footer {
+    background-image: url(../imagenes/backgroundfullblack.jpg);
+    background-size: contain;
+    border-top: solid 4px black;
+    display: flex;
+}
+.redes {
+    margin: 10px;
+}
+.redes a {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.637);
+    text-decoration: none;
+    padding: 5px;
+}
+.tituloFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.658);
+    border-radius: 20px;
+    padding: 10px;
+}
+
